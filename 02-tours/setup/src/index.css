@@ -145,6 +145,8 @@ p {
   cursor: pointer;
   margin-top: 2rem;
   font-size: 1.2rem;
+  justify-content: center;
+  
 }
 /*
 =============== 
