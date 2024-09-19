@@ -27,10 +27,10 @@ const Review = () => {
   }
   const randomPerson =()=>{
     let newNumber = Math.floor(Math.random()*people.length)
-    if(newNumber === index){
+    if(newNumber === index){ //if current index is 2 and random result also 2 , it iwll not chnage so in that case index+1 we are doing 
       newNumber = index+1;
     } 
-    //setIndex(newNumber); // in case: index=3 n also newNumber 3 thn ? this case will error = "Cannot destructure property 'name' of '_data__WEBPACK_IMPORTED_MODULE_1__.default[index]' as it is undefined."
+    //setIndex(newNumber); // in case: index=3(last index) n also newNumber 3 thn ? this case will error = "Cannot destructure property 'name' of '_data__WEBPACK_IMPORTED_MODULE_1__.default[index]' as it is undefined."
     setIndex(checkNumber(newNumber));
   }
   return (
