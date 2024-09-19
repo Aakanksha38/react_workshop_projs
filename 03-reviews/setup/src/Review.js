@@ -17,7 +17,7 @@ const Review = () => {
     setIndex((index)=>{
       let newIndex = index -1;
       return checkNumber(newIndex);
-    })
+    }) // instead of this whole fat arrow function of setIndex what we can do is = setIndex(checkNumber(index-1))
   }
   const nextPerson =()=>{
     setIndex((index)=>{
